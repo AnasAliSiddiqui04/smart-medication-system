@@ -1,0 +1,33 @@
+# 1. Go to main project folder
+cd "C:\Users\hp\OneDrive\Documents\Smart Meditation System"
+
+# 2. Create the missing files
+echo "# FastAPI + Streamlit Dependencies" > requirements.txt
+echo "fastapi==0.104.1" >> requirements.txt
+echo "uvicorn[standard]==0.24.0" >> requirements.txt  
+echo "streamlit==1.28.1" >> requirements.txt
+echo "pandas==2.1.4" >> requirements.txt
+echo "requests==2.31.0" >> requirements.txt
+echo "plotly==5.18.0" >> requirements.txt
+echo "pydantic==2.5.0" >> requirements.txt
+echo "streamlit-autorefresh==0.2.2" >> requirements.txt
+
+# 3. Create README
+echo "# 💊 Smart Medication System" > README.md
+echo "## Automata Theory Project | KIET University" >> README.md
+
+# 4. Create .gitignore  
+echo "__pycache__/" > .gitignore
+echo "*.pyc" >> .gitignore
+echo "venv/" >> .gitignore
+echo ".DS_Store" >> .gitignore
+echo "*.db" >> .gitignore
+
+# 5. Now add to Git
+git add README.md requirements.txt .gitignore
+
+# 6. Commit
+git commit -m "Added project documentation and dependencies"
+
+# 7. Push to GitHub
+git push origin main

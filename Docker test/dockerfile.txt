@@ -1,8 +1,0 @@
-# Navigate to your Backend folder
-cd "C:\Users\hp\OneDrive\Documents\Smart Meditation System\Backend"
-
-# Install required packages
-pip install fastapi uvicorn pydantic
-
-# Run the backend server
-python -m uvicorn main:app --reload --port 8000
